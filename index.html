@@ -72,6 +72,33 @@
             height: auto; /* Mantiene la proporción */
             border-radius: 10px; /* Bordes redondeados */
         }
+
+        /* Estilos para la galería */
+        .gallery {
+            display: grid; /* Usar grid para organizar las imágenes */
+            grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+            gap: 10px; /* Espaciado entre las imágenes */
+            margin: 20px 0; /* Espaciado */
+        }
+
+        .gallery img {
+            width: 100%; /* Ancho completo de cada celda */
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+        }
+
+        /* Estilos para la sección del reporte */
+        .report-container {
+            margin: 20px 0; /* Espaciado */
+            text-align: center; /* Centrar contenido */
+        }
+
+        .report-container embed {
+            width: 80%; /* Ancho del PDF */
+            height: 600px; /* Altura del PDF */
+            border: none; /* Sin bordes */
+            border-radius: 10px; /* Bordes redondeados */
+        }
     </style>
 </head>
 <body>
@@ -146,6 +173,36 @@
         </div>
     </section>
 
+    <!-- Nueva sección para Galería de prototipos e ideas conceptuales -->
+    <section id="galeria" class="section">
+        <h2>Galería de prototipos e ideas conceptuales</h2>
+        <div class="gallery">
+            <!-- Reemplaza las rutas de las imágenes por las tuyas -->
+            <img src="prototipo1.jpg" alt="Prototipo 1">
+            <img src="prototipo2.jpg" alt="Prototipo 2">
+            <img src="prototipo3.jpg" alt="Prototipo 3">
+            <img src="prototipo4.jpg" alt="Prototipo 4">
+            <img src="prototipo5.jpg" alt="Prototipo 5">
+            <img src="prototipo6.jpg" alt="Prototipo 6">
+            <img src="prototipo7.jpg" alt="Prototipo 7">
+            <img src="prototipo8.jpg" alt="Prototipo 8">
+            <img src="prototipo9.jpg" alt="Prototipo 9">
+            <img src="prototipo10.jpg" alt="Prototipo 10">
+            <img src="prototipo11.jpg" alt="Prototipo 11">
+            <img src="prototipo12.jpg" alt="Prototipo 12">
+            <img src="prototipo13.jpg" alt="Prototipo 13">
+            <img src="prototipo14.jpg" alt="Prototipo 14">
+            <img src="prototipo15.jpg" alt="Prototipo 15">
+            <img src="prototipo16.jpg" alt="Prototipo 16">
+        </div>
+    </section>
+
+    <!-- Nueva sección para el Reporte pautado -->
+    <section id="reporte" class="section report-container">
+        <h2>Reporte pautado</h2>
+        <embed src="reporte.pdf" type="application/pdf" /> <!-- Asegúrate de que el archivo PDF esté en la ruta correcta -->
+    </section>
+
     <!-- Nueva sección para el video -->
     <section id="video" class="section video-container">
         <h2>Conoce más sobre nuestro proyecto</h2>
@@ -159,6 +216,7 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
