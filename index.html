@@ -42,24 +42,15 @@
             margin: 0 10px; /* Espacio entre los logos */
         }
 
-        /* Línea decorativa */
-        .decorative-line {
-            flex-grow: 1; /* Permite que la línea ocupe el espacio restante */
-            height: 2px; /* Grosor de la línea */
-            background-color: #2c3e50; /* Color de la línea */
-            margin: 0 10px; /* Espacio entre la línea y los logos */
-            position: relative; /* Para el posicionamiento del texto */
-        }
-
         .decorative-text {
-            position: absolute; /* Posiciona el texto sobre la línea */
-            left: 50%; /* Centrar horizontalmente */
-            transform: translateX(-50%); /* Ajustar para centrar exactamente */
-            top: -20px; /* Ajustar la posición vertical del texto */
             background-color: white; /* Fondo blanco para el texto */
-            padding: 0 10px; /* Espaciado interno */
+            padding: 10px; /* Espaciado interno */
             border-radius: 5px; /* Bordes redondeados */
             font-weight: bold; /* Negrita para el texto */
+            color: #2c3e50; /* Cambiar color del texto para mejor contraste */
+            text-align: center; /* Centrar el texto */
+            flex-grow: 1; /* Permite que el texto ocupe el espacio restante */
+            margin: 0 10px; /* Espacio entre el texto y los logos */
         }
 
         /* Estilos para la sección de video */
@@ -87,9 +78,7 @@
     <header>
         <div class="logo-container">
             <img src="logo1.jpg" alt="Logo de la Empresa" class="logo"> <!-- Logo a la izquierda -->
-            <div class="decorative-line"></div> <!-- Línea decorativa -->
             <div class="decorative-text">EQUIPO: 5. NOVUS<br>SEDE: FACULTAD DE INGENIERÍA CIVIL, UANL<br>DESAFÍO SELECCIONADO: 04 - AGUACATE</div>
-            <div class="decorative-line"></div> <!-- Línea decorativa -->
             <img src="logo2.jpg" alt="Segundo Logo de la Empresa" class="logo"> <!-- Logo a la derecha -->
         </div>
         <div class="carousel">
@@ -170,6 +159,7 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
