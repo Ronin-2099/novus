@@ -26,7 +26,7 @@
 
         .logo-container {
             display: flex; /* Usar flex para alinear los logos */
-            justify-content: center; /* Centrar el contenido */
+            justify-content: space-between; /* Espaciado entre logos y el texto */
             align-items: center; /* Alinear verticalmente */
             margin: 20px 0; /* Espaciado */
             position: relative; /* Para el posicionamiento de los elementos decorativos */
@@ -44,10 +44,22 @@
 
         /* Línea decorativa */
         .decorative-line {
-            width: 80%; /* Ancho de la línea */
+            flex-grow: 1; /* Permite que la línea ocupe el espacio restante */
             height: 2px; /* Grosor de la línea */
             background-color: #2c3e50; /* Color de la línea */
-            margin: 10px auto; /* Centrar la línea */
+            margin: 0 10px; /* Espacio entre la línea y los logos */
+            position: relative; /* Para el posicionamiento del texto */
+        }
+
+        .decorative-text {
+            position: absolute; /* Posiciona el texto sobre la línea */
+            left: 50%; /* Centrar horizontalmente */
+            transform: translateX(-50%); /* Ajustar para centrar exactamente */
+            top: -20px; /* Ajustar la posición vertical del texto */
+            background-color: white; /* Fondo blanco para el texto */
+            padding: 0 10px; /* Espaciado interno */
+            border-radius: 5px; /* Bordes redondeados */
+            font-weight: bold; /* Negrita para el texto */
         }
 
         /* Estilos para la sección de video */
@@ -74,9 +86,11 @@
 <body>
     <header>
         <div class="logo-container">
-            <img src="logo1.jpg" alt="Logo de la Empresa" class="logo"> <!-- Espacio para el primer logo -->
-            <img src="logo2.jpg" alt="Segundo Logo de la Empresa" class="logo"> <!-- Espacio para el segundo logo -->
+            <img src="logo1.jpg" alt="Logo de la Empresa" class="logo"> <!-- Logo a la izquierda -->
             <div class="decorative-line"></div> <!-- Línea decorativa -->
+            <div class="decorative-text">EQUIPO: 5. NOVUS<br>SEDE: FACULTAD DE INGENIERÍA CIVIL, UANL<br>DESAFÍO SELECCIONADO: 04 - AGUACATE</div>
+            <div class="decorative-line"></div> <!-- Línea decorativa -->
+            <img src="logo2.jpg" alt="Segundo Logo de la Empresa" class="logo"> <!-- Logo a la derecha -->
         </div>
         <div class="carousel">
             <div class="carousel-inner">
