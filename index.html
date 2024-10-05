@@ -25,7 +25,9 @@
         }
 
         .logo-container {
-            text-align: center; /* Centrar el logo */
+            display: flex; /* Usar flex para alinear los logos */
+            justify-content: center; /* Centrar el contenido */
+            align-items: center; /* Alinear verticalmente */
             margin: 20px 0; /* Espaciado */
             position: relative; /* Para el posicionamiento de los elementos decorativos */
             background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
@@ -37,6 +39,7 @@
         .logo {
             max-width: 150px; /* Ajusta el tamaño máximo del logo */
             height: auto; /* Mantiene la proporción del logo */
+            margin: 0 10px; /* Espacio entre los logos */
         }
 
         /* Línea decorativa */
@@ -46,12 +49,33 @@
             background-color: #2c3e50; /* Color de la línea */
             margin: 10px auto; /* Centrar la línea */
         }
+
+        /* Estilos para la sección de video */
+        .video-container {
+            margin: 20px 0; /* Espaciado */
+        }
+
+        .video-container iframe {
+            width: 100%; /* Ancho completo */
+            max-width: 800px; /* Ancho máximo */
+            height: 450px; /* Altura fija */
+            border: none; /* Sin bordes */
+            border-radius: 10px; /* Bordes redondeados */
+        }
+
+        .impact-visual img {
+            width: 60%; /* Reducir el tamaño de la imagen */
+            max-width: 300px; /* Tamaño máximo */
+            height: auto; /* Mantiene la proporción */
+            border-radius: 10px; /* Bordes redondeados */
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="logo-container">
-            <img src="logo.jpg" alt="Logo de la Empresa" class="logo"> <!-- Espacio para el logo -->
+            <img src="logo1.jpg" alt="Logo de la Empresa" class="logo"> <!-- Espacio para el primer logo -->
+            <img src="logo2.jpg" alt="Segundo Logo de la Empresa" class="logo"> <!-- Espacio para el segundo logo -->
             <div class="decorative-line"></div> <!-- Línea decorativa -->
         </div>
         <div class="carousel">
@@ -119,6 +143,12 @@
         </div>
     </section>
 
+    <!-- Nueva sección para el video -->
+    <section id="video" class="section video-container">
+        <h2>Conoce más sobre nuestro proyecto</h2>
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe> <!-- Reemplaza VIDEO_ID con el ID del video -->
+    </section>
+
     <footer>
         <p>&copy; 2024 Novus México</p>
     </footer>
@@ -126,6 +156,7 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
